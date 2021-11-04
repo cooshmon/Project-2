@@ -8,52 +8,290 @@
     <link rel="stylesheet" href="mystyle.css" />
     <script src="jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="my.js"></script>
+    <script type="text/javascript" src="basoc.js"></script>
   </head>
   <body>
-    <div class="wrapper">
-      <svg id="svg" viewBox="0 0 71 41">
-        <div id="LSideS">0
+    <div id="wrapper">
+      <div class="svgwhole">
+        <img src="image/ME-4024-Sports-Ball-Soccer-2__42273.webp" alt="image" />
+        <svg id="svg" viewBox="0 0 100 100">
+          <defs>
+            <filter id="f2" x="0" y="0" width="200%" height="200%">
+              <feOffset result="offOut" in="SourceGraphic" dx="20" dy="20" />
+              <feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+              <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+            </filter>
+          </defs>
+          <line
+            id="bar1"
+            x1="-10"
+            ;
+            y1="10"
+            ;
+            x2="110"
+            ;
+            y2="10"
+            ;
+            style="stroke: rgb(0, 0, 0); stroke-width: 0.1; stroke-dasharray: 1"
+            ;
+          ></line>
+          <line
+            id="bar2"
+            x1="-10"
+            ;
+            y1="90"
+            ;
+            x2="110"
+            ;
+            y2="90"
+            ;
+            style="stroke: rgb(0, 0, 0); stroke-width: 0.1; stroke-dasharray: 1"
+            ;
+          ></line>
+          <line
+            id="sidebar1"
+            x1="-20"
+            ;
+            y1="15"
+            ;
+            x2="-20"
+            ;
+            y2="85"
+            ;
+            style="stroke: rgb(0, 0, 0); stroke-width: 0.1"
+            ;
+          ></line>
+          <line
+            id="sidebar2"
+            x1="122"
+            ;
+            y1="15"
+            ;
+            x2="122"
+            ;
+            y2="85"
+            ;
+            style="stroke: rgb(0, 0, 0); stroke-width: 0.1"
+            ;
+          ></line>
+          <line
+            id="crossbar1"
+            x1="-7"
+            ;
+            y1="20"
+            ;
+            x2="110"
+            ;
+            y2="80"
+            ;
+            style="stroke: rgb(0, 0, 0); stroke-width: 0.1"
+            ;
+          ></line>
+          <line
+            id="crossbar2"
+            x1="-7"
+            ;
+            y1="80"
+            ;
+            x2="110"
+            ;
+            y2="20"
+            ;
+            style="stroke: rgb(0, 0, 0); stroke-width: 0.1"
+            ;
+          ></line>
+          <ellipse
+            id="displaycircle"
+            rx="53"
+            ;
+            ry="25"
+            ;
+            cx="50"
+            ;
+            cy="50"
+            ;
+            style="stroke: rgb(0, 0, 0); stroke-width: 0.1"
+            ;
+            stroke-width=".1"
+            ;
+            fill="whitesmoke"
+            ;
+            fill-opacity="none"
+            ;
+          ></ellipse>
+          <ellipse
+            id="displaycircle2"
+            rx="52"
+            ;
+            ry="23.9"
+            ;
+            cx="50"
+            ;
+            cy="50"
+            ;
+            style="stroke: rgb(0, 0, 0); stroke-width: 0.6 guassia"
+            ;
+            stroke-width=".1"
+            ;
+            fill="whitesmoke"
+            ;
+            fill-opacity="none"
+            ;
+          ></ellipse>
+          <ellipse
+            id="Circle1"
+            rx="3"
+            ;
+            ry="3"
+            ;
+            cx="-7"
+            ;
+            cy="20"
+            ;
+            stroke="#3A87FA"
+            ;
+            stroke-width=".3"
+            ;
+            fill="#326BFF"
+            ;
+            fill-opacity=".8"
+            ;
+          ></ellipse>
+          <ellipse
+            id="Circle2"
+            rx="3"
+            ;
+            ry="3"
+            ;
+            cx="110"
+            ;
+            cy="20"
+            ;
+            stroke="#3A87FA"
+            ;
+            stroke-width=".3"
+            ;
+            fill="green"
+            ;
+            fill-opacity=".8"
+            ;
+          ></ellipse>
+          <ellipse
+            id="Circle3"
+            rx="3"
+            ;
+            ry="3"
+            ;
+            cx="-7"
+            ;
+            cy="80"
+            ;
+            stroke="#3A87FA"
+            ;
+            stroke-width=".3"
+            ;
+            fill="yellow"
+            ;
+            fill-opacity=".8"
+            ;
+          ></ellipse>
+          <ellipse
+            id="Circle4"
+            rx="3"
+            ;
+            ry="3"
+            ;
+            cx="110"
+            ;
+            cy="80"
+            ;
+            stroke="#3A87FA"
+            ;
+            stroke-width=".3"
+            ;
+            fill="red"
+            ;
+            fill-opacity=".8"
+            ;
+          ></ellipse>
+        </svg>
+      </div>
+      <div class="textwhole">
+        <div class="text">
+          <div id="LSideS" class="squares sf">
+            0
             <span id="lSideS-slot"></span>
+          </div>
         </div>
-        <div id="RSideS">0
-            <span id="rSideS-slot"></span>
+      </div>
+      <div class="textwhole">
+        <div class="text">
+          <div id="RSideS" class="squares sf">
+            0 <span id="rSideS-slot"></span>
+          </div>
         </div>
-        
-        <div id="S">S
+      </div>
+      <div class="textwhole">
+        <div class="text">
+          <div id="S" class="squares sf">
+            <p>S</p>
             <span id="topS-slot"></span>
+          </div>
         </div>
-        <div id="S1">
-          S1
-          <span id="S1-slot"></span>
+      </div>
+      <div class="textwhole">
+        <div class="text">
+          <div id="S1" class="squares sf">
+            <p>S1</p>
+            <span id="S1-slot"></span>
+          </div>
         </div>
-        <div id="S2">
-          S2
-          <span id="S2-slot"></span>
+      </div>
+      <div class="textwhole">
+        <div class="text">
+          <div id="S2" class="squares sf">S2 <span id="S2-slot"></span></div>
         </div>
-      <div id="image-slot"><img src="image/ME-4024-Sports-Ball-Soccer-2__42273.webp" alt="image" ></div>
-        <div id="bar1"></div>
-        <div id="bar2"></div>
-        <div id="sidebar1"></div>
-        <div id="sidebar2"></div>
-        <div id="topbar"></div>
-        <div id="botbar"></div>
-        <div id="bSOne">
-          ~S1
-          <span id="bSOne-slot"></span>
+      </div>
+      <div class="textwhole">
+        <div class="text">
+          <div id="bSOne" class="squares sf">
+            ~S1 <span id="bSOne-slot"></span>
+          </div>
         </div>
-        <div id="bsTwo">
-          ~S2
-          <span id="bsTwo-slot"></span>
+      </div>
+      <div class="textwhole">
+        <div class="text">
+          <div id="bsTwo" class="squares sf">
+            ~S2 <span id="bsTwo-slot"></span>
+          </div>
         </div>
-        <div id="bS">~S
-            <span id="botS-slot"></span>
+      </div>
+      <div class="textwhole">
+        <div class="text">
+          <div id="bS" class="squares sf">~S <span id="botS-slot"></span></div>
         </div>
-        <elipse id="displaycircle"></elipse>
-        <div id="Circle1"></div>
-        <div id="Circle2"></div>
-        <div id="Circle3"></div>
-        <div id="Circle4"></div>
-      </svg>
+      </div>
+
+      <footer id="botinfo">
+        <p id="definition">
+          The semiotic square, also known as the Greimas square, is a tool used
+          in structural analysis of the relationships between semiotic signs
+          through the opposition of concepts, such as feminine-masculine or
+          beautiful-ugly, and of extending the relevant ontology. The semiotic
+          square, derived from Aristotle's logical square of opposition, was
+          developed by Algirdas J. Greimas, a Lithuanian-French linguist and
+          semiotician, who considered the semiotic square to be the elementary
+          structure of meaning. Greimas first presented the square in Semantique
+          Structurale (1966), a book which was later published as Structural
+          Semantics: An Attempt at a Method (1983). He further developed the
+          semiotic square with Francois Rastier in "The Interaction of Semiotic
+          Constraints" (1968).
+        </p>
+      </footer>
+    </div>
+
+    <div class="topinfo">
+      <p>semiotic square index</p>
     </div>
   </body>
 </html>
