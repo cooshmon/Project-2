@@ -56,14 +56,7 @@ img {
 
   display: flex;
 }
-#botinfo {
-  position: absolute;
-  top: 95.625vh;
-  margin: 0;
-  padding: 0;
-  grid-column: 2;
-  background-color: white;
-}
+
 .text {
   width: 100vw;
   height: 64.704vw; /* 100/64.704 =1.5455 */
@@ -142,10 +135,51 @@ img {
     }
   }
 }
+#botinfo {
+  position: absolute;
+  top: 95.625vh;
+  margin: 0;
+  padding: 0;
+  padding-top: 5px;
+  background-color: white;
+  height: 100%;
+}
+@media (max-aspect-ratio: 113/80) {
+  #botinfo {
+    top: calc(61.9vw + 6.375vh);
+  }
+}
+@media (min-aspect-ratio: 144/60) {
+  #botinfo {
+    top: 6.375vh;
+  }
+}
+.full {
+  display: none;
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  #s1 {
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .full {
+    display: block;
+    top: 13%;
+    left: 8%;
+    font-size: 1.2vh;
+    line-height: 1.35;
+  }
+  .pre {
+    display: none;
+  }
+  #ball {
+    display: block;
+    height: 20%;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    top: 41%;
+    left: 46%;
+    padding-bottom: 6vh;
+    position: absolute;
   }
 }
 
@@ -185,22 +219,14 @@ img {
   left: 99%;
 }
 img {
-  display: block;
-  height: 20%;
-  width: auto;
-  margin: 0;
-  padding: 0;
-  top: 41%;
-  left: 46%;
-  padding-bottom: 6vh;
-  position: absolute;
+  display: none;
 }
 #definition {
   width: 25%;
 
   font-size: 1.3vh;
   font-family: Helvetica, sans-serif;
-  line-height: 1vh;
+  line-height: 1.2vh;
   padding: 0.3%;
 }
 
