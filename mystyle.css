@@ -139,6 +139,7 @@ img {
   position: absolute;
   top: 95.625vh;
   margin: 0;
+  width: 100%;
   padding: 0;
   padding-top: 5px;
   background-color: white;
@@ -215,6 +216,7 @@ img {
   padding: 0.3%;
   grid-column: 1;
   max-width: 500px;
+  width: 500px;
   min-width: 250px;
 }
 #rightterm {
@@ -225,6 +227,7 @@ img {
   line-height: 1.2vh;
   padding: 0.3%;
   padding-top: 3vh;
+  width: 500px;
   min-width: 200px;
 }
 #righthead {
@@ -271,6 +274,12 @@ img {
   #RSideS {
     left: 95%;
   }
+  #botinfo {
+    grid-template-columns: 1fr 1fr;
+  }
+  #definition {
+    width: 500px;
+  }
 }
 @media (min-width: 800px) and (max-width: 999px) {
   .small {
@@ -299,6 +308,16 @@ img {
   }
   #RSideS {
     left: 92%;
+  }
+  #botinfo {
+    grid-template-columns: 1fr 1fr;
+  }
+  #definition {
+    width: 430px;
+  }
+  #rightterm {
+    width: 100%;
+    min-width: 420px;
   }
 }
 @media (min-width: 600px) and (max-width: 799px) {
@@ -346,6 +365,16 @@ img {
   }
   #S {
     top: 11%;
+  }
+  #botinfo {
+    grid-template-columns: 1fr 1fr;
+  }
+  #definition {
+    width: 300px;
+  }
+  #rightterm {
+    width: 100%;
+    min-width: 300px;
   }
 }
 @media (min-width: 400px) and (max-width: 599px) {
@@ -401,6 +430,18 @@ img {
     top: 99%;
   }
   #botinfo {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+  #rightterm {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  #righthead {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  #definition {
+    grid-row: 1;
+    padding-top: 30%;
   }
 }
